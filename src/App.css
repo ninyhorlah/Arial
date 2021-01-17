@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/src/img/countup_bg.png");
+}
+
+/* General Styling */
+.logo,
+.aboutHeader h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+.couples h3,
+.aboutContainer p {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Homepage Styling */
+.App {
+  max-width: 1200px;
+  box-shadow: 0 0 4px grey;
+  margin: auto;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+}
+
+/* styling the nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #ffffff;
+  /* box-shadow: 0 0 4px grey; */
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.logo span {
+  color: #b72679;
+}
+.links {
+  display: flex;
+}
+
+.links p {
+  padding: 0 10px;
+}
+
+/* About styling */
+
+.aboutContainer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px;
+}
+
+.aboutHeader {
+  position: relative;
+}
+
+.aboutHeader img {
+  width: 80%;
+}
+.aboutText h2 {
+  position: absolute;
+  top: 20%;
+  left: 43%;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.aboutHeader h2 span {
+  color: #b72679;
+}
+
+.simpleImg img {
+  width: 150px;
+}
+
+.aboutContainer p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32.5px;
+  color: #a8a8aa;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.couples {
+  display: flex;
+  justify-content: space-between;
+}
+
+.couples img {
+  border-radius: 50%;
+}
+
+.couples h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 41px;
+  padding-top: 10px;
+  color: #484949;
+}
+
+.couples p {
+  line-height: 26px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  /* max-width: 400px; */
+  margin: auto;
+  color: #434444;
+  font-size: 16px;
+  padding: 0 100px;
+}
+
+.coupleName {
+  color: #b72679;
+}
