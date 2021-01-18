@@ -6,18 +6,25 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-image: url("/src/img/countup_bg.png");
 }
 
 /* General Styling */
 .logo,
-.aboutHeader h2 {
+.aboutHeader h2,
+.wedding {
   font-family: "Dancing Script", cursive;
 }
 
 .couples h3,
-.aboutContainer p {
+.aboutContainer p,
+.weddingName {
   font-family: "Raleway", sans-serif;
 }
 
@@ -28,15 +35,72 @@ body {
   margin: auto;
 }
 
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Home Section Styling */
+.sliderContainer {
+  position: relative;
+}
+
+.slider {
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
+}
+
+.sliderImage {
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  will-change: opacity;
+  text-align: center;
+}
+
+.sliderInner1 {
+  background-image: url("/src/img/blog_3.jpg");
+}
+.sliderInner2 {
+  background-image: url("/src/img/blog_2.jpg");
+}
+.sliderInner3 {
+  background-image: url("/src/img/blog_1.jpg");
+}
+
+.homeText {
+  background-image: url("/src/img/hearth_center.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  align-items: center;
+  margin: 15% auto auto 15%;
+  text-align: center;
+  color: #f9f9fb;
+}
+
+.homeInnerText {
+  padding-top: 60px;
+}
+
+.wedding h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.weddingName h2 {
+  font-size: 50px;
+  padding-top: 5px;
+  font-weight: 600;
+}
+
+.weddingDate p {
+  padding-top: 30px;
+  font-size: 23px;
+}
+
+.expired p {
+  padding-top: 80px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /* styling the nav */
@@ -52,7 +116,8 @@ body {
   font-size: 25px;
 }
 
-.logo span {
+.logo span,
+.homeInnerText h2 span {
   color: #b72679;
 }
 .links {
@@ -66,9 +131,24 @@ body {
 /* About styling */
 
 .aboutContainer {
-  background-color: #ffffff;
+  background-image: url("/src/img/blog_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
+}
+
+.aboutInner {
+  background: #ffffff;
   padding: 60px;
+  height: fit-content;
 }
 
 .aboutHeader {
@@ -109,6 +189,10 @@ body {
   justify-content: space-between;
 }
 
+.couplesInner {
+  padding: 30px;
+}
+
 .couples img {
   border-radius: 50%;
 }
@@ -134,4 +218,58 @@ body {
 
 .coupleName {
   color: #b72679;
+}
+
+.carousel p {
+  color: #d5d8df;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  padding: 20px;
+}
+
+.carouselInner {
+  height: 300px;
+  width: 100%;
+}
+
+.carouselInner div {
+  /* margin: auto; */
+  padding-top: 20px;
+  outline: none;
+}
+
+/* Story Section Styling */
+.storyContainer {
+  background-image: url("/src/img/blog_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.storyInner {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 980px) {
+  .couples {
+    display: block;
+    padding: 40px 0;
+  }
+  .aboutText h2 {
+    top: 0;
+    left: 40%;
+    font-size: 45px;
+  }
+
+  .couples p {
+    padding: 0 30px;
+  }
+
+  .carouselInner div {
+    padding-top: 10px;
+  }
+
+  .carousel p {
+    font-size: 16px;
+  }
 }
