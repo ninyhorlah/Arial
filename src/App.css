@@ -146,7 +146,8 @@ body {
   height: auto;
 }
 
-.aboutInner {
+.aboutInner,
+.storyInner {
   background: #ffffff;
   padding: 60px;
   height: fit-content;
@@ -175,7 +176,8 @@ body {
   width: 150px;
 }
 
-.aboutContainer p {
+.aboutContainer p,
+.storyInner p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32.5px;
@@ -261,10 +263,134 @@ body {
 /* Story Section Styling */
 .storyContainer {
   background-image: url("/src/img/blog_bg.jpg");
+  background-attachment: fixed;
+}
+
+.storyInnerContainer {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .storyInner {
+  padding: 60px 20px;
+}
+
+.storyText h2 {
+  left: 40%;
+}
+
+.storyPicture {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.storyPictureInner {
+  width: 450px;
+  padding: 0 20px;
+}
+.firstDateImage {
+  position: relative;
+}
+
+.firstDateText {
+  height: 300px;
+  padding: 20px 0;
+}
+
+.firstDateText h3 {
+  font-weight: 300;
+  font-size: 30px;
+}
+.firstDateText p {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.storyPicture img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.calender {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+  border-radius: 5px;
+  border-bottom: 3px solid #de047f;
+}
+
+.calender p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.calender p:nth-child(1) {
+  border-bottom: 1px solid rgb(168, 167, 167);
+  color: #434444;
+}
+.calender p:nth-child(2) {
+  color: #de047f;
+}
+
+.firstDateContainer {
+  text-align: right;
+}
+.secondDateContainer {
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.firstDateText a {
+  color: #de047f;
+  text-decoration: none;
+}
+
+.cardContainer {
+  height: 100vh;
+  display: flex;
+  padding: 40px;
+}
+
+.card {
   background-color: #ffffff;
+  height: fit-content;
+  width: auto;
+  margin: 70px 15px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  padding: 0;
+}
+
+.card h3 {
+  padding: 15px 10px 10px 20px;
+  font-weight: 300;
+  color: #666868;
+  font-size: 25px;
+}
+
+.card p {
+  padding: 5px 5px 15px 20px;
+  color: #666868;
+}
+
+.readMoreCard {
+  padding-bottom: 20px;
+}
+.card a {
+  text-decoration: none;
+  padding: 0 0 20px 20px;
+  color: #de047f;
+}
+
+.card a:hover {
+  color: #434444;
 }
 
 @media screen and (max-width: 980px) {
@@ -278,6 +404,10 @@ body {
     font-size: 45px;
   }
 
+  .storyText h2 {
+    left: 30%;
+  }
+
   .couples p {
     padding: 0 30px;
   }
@@ -288,5 +418,44 @@ body {
 
   .carousel p {
     font-size: 16px;
+  }
+
+  .storyPicture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .secondDateContainer {
+    flex-direction: column;
+  }
+
+  .firstDateContainer {
+    text-align: left;
+  }
+  .cardContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .card {
+    width: 300px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .aboutText h2 {
+    left: 30%;
+    font-size: 35px;
+  }
+
+  .storyText h2 {
+    left: 20%;
+    font-size: 30px;
   }
 }
