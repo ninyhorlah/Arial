@@ -1,6 +1,9 @@
 import React from 'react'
 import Slider from 'react-slick';
-// import { FontAwesomeIcon } from '@fo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
     var settings = {
@@ -23,11 +26,6 @@ const About = () => {
                         <div className="simpleImg">
                             <img src="/assets/img/headline_simple.svg" alt=""/>
                         </div>
-                        <div className="social">
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer"></a>
-                            <a href="https://twitter.com" target="_blank" rel="noreferrer"></a>
-                            <a href="https://linkedin.com" target="_blank" rel="noreferrer"></a>
-                        </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis massa, scelerisque vel diam non.</p>
 
@@ -42,6 +40,31 @@ const About = () => {
                             </div>
                             <h3>Jane Doe <span className="coupleName">Bride</span></h3>
                             <p>Mauris fermentum lacinia nisl. Duis nec rutrum nisl. Ut ac eros fermentum.</p>
+                            <div className="social">
+                                <a 
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                                title="Facebook"
+                                href="https://facebook.com" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon icon={faFacebookF}/>
+                                </a>
+                                <a 
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                                data-aos-delay="300"
+                                title="Twitter"
+                                href="https://twitter.com" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon icon={faTwitter}/>
+                                </a>
+                                <a 
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                                data-aos-delay="500"
+                                title="LinkedIn"
+                                href="https://linkedin.com" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedinIn}/>
+                                </a>
+                            </div>
                         </div>
                         <div className="couplesInner">
                             <div 
@@ -53,6 +76,28 @@ const About = () => {
                             </div>
                             <h3>Jone Doe <span className="coupleName">Groom</span></h3>
                             <p>Mauris fermentum lacinia nisl. Duis nec rutrum nisl. Ut ac eros fermentum.</p>
+                            <div className="social">
+                                <a data-aos="fade-up"
+                                data-aos-duration="3000"
+                                title="Facebook"
+                                href="https://facebook.com" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon icon={faFacebookF}/>
+                                </a>
+                                <a data-aos="fade-up"
+                                data-aos-duration="3000"
+                                data-aos-delay="300"
+                                title="Twitter"
+                                href="https://twitter.com" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon icon={faTwitter}/>
+                                </a>
+                                <a data-aos="fade-up"
+                                data-aos-duration="3000"
+                                data-aos-delay="500"
+                                title="LinkedIn" 
+                                href="https://linkedin.com" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedinIn}/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

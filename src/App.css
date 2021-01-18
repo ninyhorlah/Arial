@@ -46,7 +46,8 @@ body {
   height: 100vh;
 }
 
-.sliderImage {
+.sliderImage,
+.storyContainer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -238,12 +239,28 @@ body {
   outline: none;
 }
 
+.social a {
+  color: #b72679;
+  border: 1px solid rgb(156, 155, 155);
+  border-radius: 50%;
+  padding: 7px 12px;
+  margin: 10px;
+}
+
+.social a:hover {
+  color: #ffffff;
+  background-color: #b72679;
+  border: 1px solid #b72679;
+  padding: 7px 12px;
+}
+
+.social {
+  margin: 20px;
+}
+
 /* Story Section Styling */
 .storyContainer {
   background-image: url("/src/img/blog_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .storyInner {
