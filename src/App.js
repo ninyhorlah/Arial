@@ -7,6 +7,8 @@ import Home from './components/home';
 import Nav from './components/nav';
 import About from './components/about';
 import Story from './components/story'
+import Important from './components/important';
+import Portfolio from './components/portfolio';
 
 function App() {
   AOS.init();
@@ -17,6 +19,8 @@ function App() {
 
       <About/>
       <Story/>
+      <Important/>
+      <Portfolio/>
     </div>
   );
 }

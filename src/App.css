@@ -18,13 +18,16 @@ body {
 /* General Styling */
 .logo,
 .aboutHeader h2,
-.wedding {
+.wedding,
+.numbers {
   font-family: "Dancing Script", cursive;
 }
 
 .couples h3,
 .aboutContainer p,
-.weddingName {
+.weddingName,
+.importantInner p,
+.importantPictures h2 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -147,7 +150,8 @@ body {
 }
 
 .aboutInner,
-.storyInner {
+.storyInner,
+.importantInner {
   background: #ffffff;
   padding: 60px;
   height: fit-content;
@@ -168,7 +172,8 @@ body {
   font-weight: 500;
 }
 
-.aboutHeader h2 span {
+.aboutHeader h2 span,
+.numbers {
   color: #b72679;
 }
 
@@ -177,7 +182,8 @@ body {
 }
 
 .aboutContainer p,
-.storyInner p {
+.storyInner p,
+.importantInner p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32.5px;
@@ -187,7 +193,8 @@ body {
   padding: 20px 0;
 }
 
-.couples {
+.couples,
+.importantPictures {
   display: flex;
   justify-content: space-between;
 }
@@ -393,6 +400,51 @@ body {
   color: #434444;
 }
 
+/* Important people's Section */
+.importantInner {
+  text-align: center;
+}
+
+.importantPictures {
+  padding: 50px 0;
+}
+
+.importantPictures h2 {
+  font-size: 30px;
+  font-weight: 100;
+  padding-bottom: 30px;
+  color: #666868;
+}
+
+.brideMaids span,
+.groomsMen span {
+  padding: 10px;
+}
+
+.pictures {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px;
+  font-size: 25px;
+}
+
+.statistics p {
+  font-weight: 100;
+}
+
+.numbers {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
 @media screen and (max-width: 980px) {
   .couples {
     display: block;
@@ -445,6 +497,31 @@ body {
   .card {
     width: 300px;
     margin: 10px;
+  }
+
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .importantPictures h2 {
+    font-size: 20px;
+  }
+
+  .statistics {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statistics div {
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .numbers {
+    font-size: 30px;
   }
 }
 
