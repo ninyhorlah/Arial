@@ -151,7 +151,8 @@ body {
 
 .aboutInner,
 .storyInner,
-.importantInner {
+.importantInner,
+.portfolioInner {
   background: #ffffff;
   padding: 60px;
   height: fit-content;
@@ -183,7 +184,8 @@ body {
 
 .aboutContainer p,
 .storyInner p,
-.importantInner p {
+.importantInner p,
+.portfolioInner p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32.5px;
@@ -219,7 +221,6 @@ body {
   line-height: 26px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-  /* max-width: 400px; */
   margin: auto;
   color: #434444;
   font-size: 16px;
@@ -401,7 +402,8 @@ body {
 }
 
 /* Important people's Section */
-.importantInner {
+.importantInner,
+.portfolioInner {
   text-align: center;
 }
 
@@ -423,6 +425,7 @@ body {
 
 .pictures {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -443,6 +446,40 @@ body {
 .numbers {
   font-size: 40px;
   padding-bottom: 20px;
+}
+
+/* Portfolio section styling */
+.portfolioTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.portfolioTitle p {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 400;
+}
+
+.portfolioTitle p:hover {
+  color: #de047f;
+  cursor: pointer;
+}
+
+.portfolioPictures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px auto;
+}
+
+.portfolioPictures div {
+  margin: 10px;
+}
+
+.portfolioPictures img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 980px) {
@@ -501,6 +538,7 @@ body {
 
   .pictures {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
   }
@@ -534,5 +572,11 @@ body {
   .storyText h2 {
     left: 20%;
     font-size: 30px;
+  }
+
+  .portfolioPictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
