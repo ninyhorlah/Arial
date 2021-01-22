@@ -29,7 +29,8 @@ body {
 .importantInner p,
 .importantPictures h2,
 .guestInner p,
-.registryInner p {
+.registryInner p,
+.rsvpInner p {
   font-family: "Raleway", sans-serif;
 }
 
@@ -46,7 +47,7 @@ body {
 }
 
 .slider {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
 }
@@ -192,7 +193,8 @@ body {
 .importantInner p,
 .portfolioInner p,
 .guestInner p,
-.registryInner p {
+.registryInner p,
+.rsvpInner p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32.5px;
@@ -412,7 +414,8 @@ body {
 .importantInner,
 .portfolioInner,
 .guestInner,
-.registryInner {
+.registryInner,
+.rsvpInner {
   text-align: center;
 }
 
@@ -570,6 +573,87 @@ body {
   padding: 50px 10px;
 }
 
+/* RSVP section styling */
+.rsvpContainer {
+  padding: 100px 20px;
+}
+
+.rsvpText h2 {
+  left: 45%;
+}
+
+.rsvpInner p,
+.rsvpText h2 {
+  color: #ffffff;
+}
+
+form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  text-align: left;
+  color: #ffffff;
+  padding: 20px 5px;
+  font-style: 16px;
+  font-weight: 200;
+}
+
+.formInner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.formInner div {
+  margin: 15px;
+}
+
+.formInner input,
+.formInner select {
+  width: 420px;
+  height: 55px;
+}
+
+textarea,
+.formInner input,
+.formInner select {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.7);
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #484949;
+}
+
+textarea {
+  width: 75%;
+}
+
+.formTextarea label {
+  padding-left: 13%;
+}
+
+.btn input {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #de047f;
+  color: #ffffff;
+  outline: none;
+  margin-top: 50px;
+  border: none;
+}
+
+.btn input:hover {
+  background-color: #960858;
+}
+
 @media screen and (max-width: 980px) {
   .couples {
     display: block;
@@ -657,6 +741,31 @@ body {
   .registryCarouselInner {
     width: 300px;
   }
+
+  .rsvpText h2 {
+    left: 40%;
+  }
+
+  .formInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .formInner input,
+  .formInner select {
+    width: 75%;
+    height: 55px;
+  }
+
+  .formInner div {
+    margin: 5px;
+  }
+
+  .formInner label {
+    padding-left: 13%;
+  }
 }
 
 @media screen and (max-width: 689px) {
@@ -668,6 +777,10 @@ body {
   .storyText h2 {
     left: 20%;
     font-size: 30px;
+  }
+
+  .rsvpText h2 {
+    left: 40%;
   }
 
   .portfolioPictures {
