@@ -9,6 +9,8 @@ import About from './components/about';
 import Story from './components/story'
 import Important from './components/important';
 import Portfolio from './components/portfolio';
+import Guest from './components/guest' ;
+import Registry from './components/registry'
 
 function App() {
   AOS.init();
@@ -21,6 +23,8 @@ function App() {
       <Story/>
       <Important/>
       <Portfolio/>
+      <Guest/>
+      <Registry/>
     </div>
   );
 }

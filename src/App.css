@@ -27,7 +27,9 @@ body {
 .aboutContainer p,
 .weddingName,
 .importantInner p,
-.importantPictures h2 {
+.importantPictures h2,
+.guestInner p,
+.registryInner p {
   font-family: "Raleway", sans-serif;
 }
 
@@ -134,7 +136,8 @@ body {
 
 /* About styling */
 
-.aboutContainer {
+.aboutContainer,
+.registryContainer {
   background-image: url("/src/img/blog_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,7 +155,9 @@ body {
 .aboutInner,
 .storyInner,
 .importantInner,
-.portfolioInner {
+.portfolioInner,
+.guestInner,
+.registryInner {
   background: #ffffff;
   padding: 60px;
   height: fit-content;
@@ -185,7 +190,9 @@ body {
 .aboutContainer p,
 .storyInner p,
 .importantInner p,
-.portfolioInner p {
+.portfolioInner p,
+.guestInner p,
+.registryInner p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32.5px;
@@ -403,7 +410,9 @@ body {
 
 /* Important people's Section */
 .importantInner,
-.portfolioInner {
+.portfolioInner,
+.guestInner,
+.registryInner {
   text-align: center;
 }
 
@@ -480,6 +489,85 @@ body {
 .portfolioPictures img {
   width: 100%;
   border-radius: 5px;
+}
+
+/* Guest Section Styling */
+.guestInner {
+  max-width: 1100px;
+  margin: auto;
+}
+.guestContent {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.firstGuestContent {
+  text-align: right;
+}
+
+.firstGuestContent h2 {
+  font-weight: 300;
+  color: #222222;
+}
+
+.firstGuestContent p {
+  font-size: 16px;
+  font-weight: 200;
+  color: #222222;
+}
+
+.firstGuestContent button {
+  padding: 15px 15px;
+  border: 1px solid #de047f;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  color: #de047f;
+}
+
+.firstGuestContent button:hover {
+  background-color: #de047f;
+  color: #ffffff;
+}
+
+.icon {
+  padding-left: 15px;
+}
+
+/* Registry section styling */
+.registryCarousel {
+  display: flex !important;
+  justify-content: center;
+}
+
+.registryCarouselInner {
+  border: 1px solid rgba(168, 168, 170, 0.5);
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.registryCarouselContainer div {
+  outline: none;
+}
+
+.registryCarouselInner p {
+  color: #222222;
+  font-size: 16px;
+}
+
+.registryCarouselInner h2 {
+  color: #222222;
+  font-weight: 300;
+}
+
+.registryIcon {
+  color: rgba(168, 168, 170, 0.2);
+  font-size: 50px;
+  padding: 10px 5px;
+}
+
+.registryCarouselContainer {
+  padding: 50px 10px;
 }
 
 @media screen and (max-width: 980px) {
@@ -561,6 +649,14 @@ body {
   .numbers {
     font-size: 30px;
   }
+  .registryCarousel {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .registryCarouselInner {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 689px) {
@@ -579,4 +675,13 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+
+  /* .registryCarousel {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .registryCarouselInner {
+    width: auto;
+  } */
 }
