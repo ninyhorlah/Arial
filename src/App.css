@@ -575,7 +575,7 @@ body {
 
 /* RSVP section styling */
 .rsvpContainer {
-  padding: 100px 20px;
+  padding: 100px 20px 150px 20px;
 }
 
 .rsvpText h2 {
@@ -652,6 +652,12 @@ textarea {
 
 .btn input:hover {
   background-color: #960858;
+}
+
+.footer {
+  background-color: #222222;
+  color: #666868;
+  padding: 20px 40px;
 }
 
 @media screen and (max-width: 980px) {

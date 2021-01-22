@@ -11,6 +11,7 @@ import Important from './components/important';
 import Portfolio from './components/portfolio';
 import Guest from './components/guest' ;
 import Registry from './components/registry'
+import Footer from './components/footer';
 
 function App() {
   AOS.init();
@@ -25,6 +26,7 @@ function App() {
       <Portfolio/>
       <Guest/>
       <Registry/>
+      <Footer/>
     </div>
   );
 }
