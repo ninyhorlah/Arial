@@ -12,7 +12,7 @@ const Registry = () => {
         autoplaySpeed: 2000,
     }
     return (
-        <div className="registryContainer">
+        <div className="registryContainer" id="gift">
             <div className="overlay">
                 <div className="registryInner">
                     <div className="aboutHeader">
@@ -29,7 +29,10 @@ const Registry = () => {
                     <div className="registryCarouselContainer">
                         <Slider {...settings}>
                             <div className="registryCarousel">
-                                <div className="registryCarouselInner">
+                                <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faHome}/>
                                     </div>
@@ -38,7 +41,10 @@ const Registry = () => {
 
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
-                                <div className="registryCarouselInner">
+                                <div 
+                                data-aos="fade-down"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faFilm}/>
                                     </div>
@@ -47,7 +53,10 @@ const Registry = () => {
 
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
-                                <div className="registryCarouselInner">
+                                <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faMoneyBill}/>
                                     </div>
@@ -56,7 +65,10 @@ const Registry = () => {
 
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
-                                <div className="registryCarouselInner">
+                                <div 
+                                data-aos="fade-down"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faBed}/>
                                     </div>
@@ -66,8 +78,12 @@ const Registry = () => {
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
                             </div>
-                            <div className="registryCarousel">
-                                <div className="registryCarouselInner">
+                            <div 
+                            className="registryCarousel">
+                                <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faGem}/>
                                     </div>
@@ -76,7 +92,10 @@ const Registry = () => {
 
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
-                                <div className="registryCarouselInner">
+                                <div
+                                data-aos="fade-down"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faMotorcycle}/>
                                     </div>
@@ -85,7 +104,10 @@ const Registry = () => {
 
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
-                                <div className="registryCarouselInner">
+                                <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
                                     <div className="registryIcon">
                                         <FontAwesomeIcon icon={faBriefcase}/>
                                     </div>
@@ -95,7 +117,10 @@ const Registry = () => {
                                     <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
                                 </div>
                                 <div className="registryCarouselInner">
-                                    <div className="registryIcon">
+                                    <div 
+                                    data-aos="fade-down"
+                                    data-aos-delay="500"
+                                    className="registryIcon">
                                         <FontAwesomeIcon icon={faMusic}/>
                                     </div>
 

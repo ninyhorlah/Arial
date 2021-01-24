@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import {faAngleRight, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 const Guest = () => {
 
@@ -13,7 +13,7 @@ const Guest = () => {
     }
 
     return (
-        <div>
+        <div id="event">
             <div className="guestInner">
                 <div className="aboutHeader">
                         <img src="/assets/img/headline_heart.svg" alt=""/>
@@ -33,29 +33,35 @@ const Guest = () => {
                             <p>Donec venenatis porta mollis. Fusce quis tincidunt orci. Integer fermentum ante augue, sed accumsan purus ornare vitae. Ut accumsan ornare elit at maximus. Aliquam tincidunt ipsum ut nunc sollicitudin dapibus.</p>
                             <button>Read More <span className="icon"><FontAwesomeIcon icon={faAngleRight}/></span></button>
                         </div>
-                        <div>
+                        <div className="secondGuestContent">
                             <Slider {...settings}>
                                 <div>
                                     <h2>Our Ceremony</h2>
                                     <p>Nam condimentum lorem odio, in efficitur est facilisis sit amet. Donec eu diam accumsan, dictum ligula sed, eleifend ipsum.</p>
-                                    <div>
-                                        <img src="/assets/img/map_marker.png" alt=""/>
+                                    <div className="mapWrapper">
+                                        <span className="mapIcon">
+                                            <FontAwesomeIcon icon={faMapMarkerAlt}/>
+                                        </span>
                                         <span>Show Map</span>
                                     </div>
                                 </div>
                                 <div>
                                     <h2>Wedding Party</h2>
                                     <p>Nam condimentum lorem odio, in efficitur est facilisis sit amet. Donec eu diam accumsan, dictum ligula sed, eleifend ipsum.</p>
-                                    <div>
-                                        <img src="/assets/img/map_marker.png" alt=""/>
+                                    <div className="mapWrapper">
+                                        <span className="mapIcon">
+                                            <FontAwesomeIcon icon={faMapMarkerAlt}/>
+                                        </span>
                                         <span>Show Map</span>
                                     </div>
                                 </div>
                                 <div>
                                     <h2>Reception</h2>
                                     <p>Nam condimentum lorem odio, in efficitur est facilisis sit amet. Donec eu diam accumsan, dictum ligula sed, eleifend ipsum.</p>
-                                    <div>
-                                        <img src="/assets/img/map_marker.png" alt=""/>
+                                    <div className="mapWrapper">
+                                        <span className="mapIcon">
+                                            <FontAwesomeIcon icon={faMapMarkerAlt}/>
+                                        </span>
                                         <span>Show Map</span>
                                     </div>
                                 </div>

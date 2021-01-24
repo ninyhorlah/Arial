@@ -13,6 +13,7 @@ html {
 
 body {
   background-image: url("/src/img/countup_bg.png");
+  overflow-x: hidden;
 }
 
 /* General Styling */
@@ -32,6 +33,16 @@ body {
 .registryInner p,
 .rsvpInner p {
   font-family: "Raleway", sans-serif;
+}
+
+/* back to top button */
+.back {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 10px;
+  color: #de047f;
+  position: fixed;
+  z-index: 30;
 }
 
 /* Homepage Styling */
@@ -111,12 +122,22 @@ body {
 }
 
 /* styling the nav */
+/* .navCont {
+  box-shadow: 0 0 4px grey;
+} */
+.navFixed {
+  position: fixed;
+  top: 0;
+  width: 1100px;
+  z-index: 10;
+  box-shadow: 0 0 4px grey;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   padding: 25px;
   background-color: #ffffff;
-  /* box-shadow: 0 0 4px grey; */
 }
 
 .logo {
@@ -129,10 +150,32 @@ body {
 }
 .links {
   display: flex;
+  background-color: #ffffff;
 }
 
-.links p {
+.links p a {
   padding: 0 10px;
+  color: #434444;
+  text-decoration: none;
+}
+
+.links p a:hover {
+  color: #de047f;
+}
+
+.mobile {
+  display: none;
+}
+
+.toggle {
+  display: none;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #222222;
+  margin: 5px;
 }
 
 /* About styling */
@@ -207,6 +250,7 @@ body {
 .couples,
 .importantPictures {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 
@@ -446,6 +490,7 @@ body {
 
 .statistics {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 120px;
   font-size: 25px;
@@ -495,13 +540,23 @@ body {
 }
 
 /* Guest Section Styling */
+.guestContainer {
+  width: 100%;
+}
 .guestInner {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: auto;
 }
 .guestContent {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+  text-align: left;
+}
+
+.firstGuestContent,
+.secondGuestContent {
+  padding: 15px 30px;
 }
 
 .firstGuestContent {
@@ -513,7 +568,8 @@ body {
   color: #222222;
 }
 
-.firstGuestContent p {
+.firstGuestContent p,
+.secondGuestContent p {
   font-size: 16px;
   font-weight: 200;
   color: #222222;
@@ -535,6 +591,19 @@ body {
 
 .icon {
   padding-left: 15px;
+}
+
+.secondGuestContent {
+  width: 50%;
+}
+
+.secondGuestContent h2 {
+  font-weight: 400;
+}
+
+.mapWrapper,
+.secondGuestContent h2 {
+  color: #de047f;
 }
 
 /* Registry section styling */
@@ -661,6 +730,30 @@ textarea {
 }
 
 @media screen and (max-width: 980px) {
+  .nav {
+    padding: 25px 70px;
+  }
+  .toggle {
+    display: block;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links p {
+    padding: 10px 5px 10px 80px;
+  }
+
   .couples {
     display: block;
     padding: 40px 0;
@@ -725,9 +818,14 @@ textarea {
     font-size: 20px;
   }
 
+  .importantPictures {
+    justify-content: center;
+  }
+
   .statistics {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
   }
 
   .statistics div {
@@ -772,6 +870,24 @@ textarea {
   .formInner label {
     padding-left: 13%;
   }
+
+  .guestContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .secondGuestContent {
+    width: 100%;
+  }
+
+  .firstGuestContent {
+    text-align: left;
+  }
+
+  .firstGuestContent,
+  .secondGuestContent {
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 689px) {
@@ -793,6 +909,11 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .statistics {
+    display: flex;
+    flex-direction: column;
   }
 
   /* .registryCarousel {

@@ -13,7 +13,7 @@ let Home = () => {
     }
 
     return (
-       <div>
+       <div id="home">
            <div className="homeContainer">
                <div className="sliderContainer">
                    <div className="homeText">

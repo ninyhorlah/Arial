@@ -2,7 +2,7 @@ import React from 'react'
 
 const Important = () => {
     return (
-        <div>
+        <div id="important">
             <div className="importantInner">
                 <div className="aboutHeader">
                     <img src="/assets/img/headline_heart.svg" alt=""/>

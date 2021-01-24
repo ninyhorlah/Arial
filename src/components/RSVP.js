@@ -2,7 +2,7 @@ import React from 'react'
 
 const RSVP = () => {
     return (
-        <div className="rsvpContainer">
+        <div className="rsvpContainer" id="rsvp">
             <div className="rsvpInner">
                 <div className="aboutHeader">
                     <img src="/assets/img/headline_heart.svg" alt=""/>

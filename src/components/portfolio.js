@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portfolio = () => {
     return (
-        <div>
+        <div className="portfolio">
             <div className="portfolioInner">
                 <div className="aboutHeader">
                     <img src="/assets/img/headline_heart.svg" alt=""/>

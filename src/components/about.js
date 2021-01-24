@@ -14,7 +14,7 @@ const About = () => {
 
     }
     return (
-        <div className="aboutContainer">
+        <div className="aboutContainer" id="about">
             <div className="overlay">
                 <div className="aboutInner">
                     <div className="aboutHeader">
