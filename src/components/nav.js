@@ -3,7 +3,7 @@ import NavLinks from './navLinks'
 
 const Nav = () => {
     const[nav, setNav] = useState()
-    const[y, setY] = useState( );
+    // const[y, setY] = useState( );
 
     let menu;
 
@@ -16,25 +16,19 @@ const Nav = () => {
 
     let handleNavigation = () => {
         if( window.scrollY > window.innerWidth){
-                setY(true)
+                setNav(true)
         }else{
-            setY(false)
+            setNav(false)
         }
     }
 
     window.addEventListener("scroll", handleNavigation)
 
 
-    // useEffect(() => {
-    //     window.addEventListener("scroll", handleNavigation)
-
-    //     return () => {
-    //         window.removeEventListener("scroll", handleNavigation)
-    //     } 
-    // }, [handleNavigation])
+    
 
     return (
-        <nav className={y ? 'navFixed' : nav}>
+        <nav className={nav ? 'navFixed' : nav}>
             <div className='nav'>
                 <div className="logo">
                     Arl<span>i</span>n
