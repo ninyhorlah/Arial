@@ -41,7 +41,7 @@ const RSVP = () => {
                     </div>
                     <div>
                         <label htmlFor="event">Attending The Events</label>
-                        <select name="event" id="event">
+                        <select name="event" >
                             <option value="choose">Please Choose</option>
                             <option value="1">Event 1</option>
                             <option value="2">Event 2</option>

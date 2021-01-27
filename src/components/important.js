@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+// import CountUp from 'react-countup';
 
 const Important = () => {
     return (
-        <div id="important">
+        <div id="people">
             <div className="importantInner">
                 <div className="aboutHeader">
                     <img src="/assets/img/headline_heart.svg" alt=""/>

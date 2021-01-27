@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import NavLinks from './navLinks'
 
 const Nav = () => {
     const[nav, setNav] = useState()
-    // const[y, setY] = useState( );
+    const[scrollY, setScrollY] = useState( );
 
     let menu;
 
     if(nav){
         menu = <div className="mobile">
-            <NavLinks/>
+            <NavLinks closeNav={() => setNav(false)}/>
         </div>
 
     }
 
     let handleNavigation = () => {
-        if( window.scrollY > window.innerWidth){
-                setNav(true)
+        if( window.scrollY >= window.innerHeight){
+                setScrollY(true)
         }else{
-            setNav(false)
+            setScrollY(false)
         }
     }
 
@@ -28,7 +28,7 @@ const Nav = () => {
     
 
     return (
-        <nav className={nav ? 'navFixed' : nav}>
+        <div className={scrollY ? 'navFixed ' : 'nav'}>
             <div className='nav'>
                 <div className="logo">
                     Arl<span>i</span>n
@@ -40,11 +40,11 @@ const Nav = () => {
                 </div>
 
                 <div className="web">
-                    <NavLinks/>
+                    <NavLinks closeNav={() => setNav(false)}/>
                 </div>
             </div>
             {menu}
-        </nav>
+        </div>
     )
 }
 

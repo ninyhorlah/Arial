@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAngleRight, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+import  MapContainer  from './map';
 
 const Guest = () => {
 
@@ -68,6 +69,9 @@ const Guest = () => {
                             </Slider>
                         </div>
                     </div>
+            </div>
+            <div className="map">
+                <MapContainer/>
             </div>
         </div>
     )

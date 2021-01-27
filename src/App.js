@@ -12,15 +12,13 @@ import Portfolio from './components/portfolio';
 import Guest from './components/guest' ;
 import Registry from './components/registry'
 import Footer from './components/footer';
-// import Button from './components/button';
-// import { MapContainer } from './components/map';
 
 function App() {
   AOS.init();
   return (
     <div className="App">
       <Home/>
-      {/* <Button/> */}
+      
       <Nav/>
 
       <About/>
@@ -28,7 +26,6 @@ function App() {
       <Important/>
       <Portfolio/>
       <Guest/>
-      {/* <MapContainer/> */}
       <Registry/>
       <Footer/>
     </div>

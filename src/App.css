@@ -35,16 +35,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-/* back to top button */
-.back {
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 20px 10px;
-  color: #de047f;
-  position: fixed;
-  z-index: 30;
-}
-
 /* Homepage Styling */
 .App {
   max-width: 1200px;
@@ -122,22 +112,26 @@ body {
 }
 
 /* styling the nav */
-/* .navCont {
-  box-shadow: 0 0 4px grey;
-} */
+
 .navFixed {
   position: fixed;
   top: 0;
-  width: 1200px;
+  max-width: 1200px;
   z-index: 10;
   box-shadow: 0 0 4px grey;
+  width: 100%;
+}
+
+.active {
+  color: #de047f;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 25px 35px;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .logo {
@@ -540,11 +534,13 @@ body {
 }
 
 /* Guest Section Styling */
+#event {
+  padding-bottom: 620px;
+}
 .guestContainer {
   width: 100%;
 }
 .guestInner {
-  /* max-width: 1100px; */
   margin: auto;
 }
 .guestContent {
@@ -606,7 +602,14 @@ body {
   color: #de047f;
 }
 
+.mapIcon {
+  padding-right: 10px;
+}
+
 /* Registry section styling */
+/* .registryContainer {
+  padding-top: 1000px;
+} */
 .registryCarousel {
   display: flex !important;
   justify-content: center;
@@ -618,7 +621,8 @@ body {
   padding: 10px 20px;
 }
 
-.registryCarouselContainer div {
+.registryCarouselContainer div,
+.guestContent div {
   outline: none;
 }
 
@@ -731,7 +735,12 @@ textarea {
 
 @media screen and (max-width: 980px) {
   .nav {
-    padding: 25px 70px;
+    padding: 25px 35px;
+  }
+
+  .navFixed {
+    width: 100%;
+    left: 0;
   }
   .toggle {
     display: block;
@@ -748,6 +757,10 @@ textarea {
   .links {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
   }
 
   .links p {
@@ -825,7 +838,6 @@ textarea {
   .statistics {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
   }
 
   .statistics div {
@@ -899,6 +911,10 @@ textarea {
   .storyText h2 {
     left: 20%;
     font-size: 30px;
+  }
+
+  .couples img {
+    width: 70%;
   }
 
   .rsvpText h2 {
