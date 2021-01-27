@@ -16,7 +16,6 @@ const Registry = () => {
             <div className="overlay">
                 <div className="registryInner">
                     <div className="aboutHeader">
-                        <img src="/assets/img/headline_heart.svg" alt=""/>
                         <div className="aboutText">
                             <h2>Gift <span>Registry</span> </h2>
                         </div>

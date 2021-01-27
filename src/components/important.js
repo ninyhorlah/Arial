@@ -6,7 +6,6 @@ const Important = () => {
         <div id="people">
             <div className="importantInner">
                 <div className="aboutHeader">
-                    <img src="/assets/img/headline_heart.svg" alt=""/>
                     <div className="aboutText  storyText">
                         <h2>Important <span>People</span></h2>
                     </div>

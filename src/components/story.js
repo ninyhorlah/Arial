@@ -7,7 +7,6 @@ const Story = () => {
             <div className="storyInnerContainer">
                 <div className="storyInner">
                     <div className="aboutHeader">
-                        <img src="/assets/img/headline_heart.svg" alt=""/>
                         <div className="aboutText  storyText">
                             <h2><span>Our</span> Love Story</h2>
                         </div>

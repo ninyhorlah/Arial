@@ -5,7 +5,6 @@ const RSVP = () => {
         <div className="rsvpContainer" id="rsvp">
             <div className="rsvpInner">
                 <div className="aboutHeader">
-                    <img src="/assets/img/headline_heart.svg" alt=""/>
                     <div className="aboutText  storyText rsvpText">
                         <h2><span>R</span>SVP</h2>
                     </div>

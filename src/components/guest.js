@@ -17,7 +17,6 @@ const Guest = () => {
         <div id="event">
             <div className="guestInner">
                 <div className="aboutHeader">
-                        <img src="/assets/img/headline_heart.svg" alt=""/>
                         <div className="aboutText">
                             <h2><span>Wedding</span> Event</h2>
                         </div>

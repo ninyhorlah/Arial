@@ -3,7 +3,7 @@ import NavLinks from './navLinks'
 
 const Nav = () => {
     const[nav, setNav] = useState()
-    const[scrollY, setScrollY] = useState( );
+    const[scrollY, setScrollY] = useState();
 
     let menu;
 
@@ -28,7 +28,7 @@ const Nav = () => {
     
 
     return (
-        <div className={scrollY ? 'navFixed ' : 'nav'}>
+        <div className={scrollY ? 'navFixed ' : 'nav mobile'}>
             <div className='nav'>
                 <div className="logo">
                     Arl<span>i</span>n

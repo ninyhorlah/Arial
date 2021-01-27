@@ -18,7 +18,6 @@ const About = () => {
             <div className="overlay">
                 <div className="aboutInner">
                     <div className="aboutHeader">
-                        <img src="/assets/img/headline_heart.svg" alt=""/>
                         <div className="aboutText">
                             <h2>About <span>Us</span></h2>
                         </div>

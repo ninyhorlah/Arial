@@ -5,7 +5,6 @@ const Portfolio = () => {
         <div className="portfolio" id="portfolio">
             <div className="portfolioInner">
                 <div className="aboutHeader">
-                    <img src="/assets/img/headline_heart.svg" alt=""/>
                     <div className="aboutText  storyText">
                         <h2><span>Our</span> Portfolio</h2>
                     </div>

@@ -202,16 +202,21 @@ body {
 }
 
 .aboutHeader {
-  position: relative;
+  background-image: url("./img/headline_heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  width: 70%;
+  align-items: center;
+  margin: auto;
 }
 
 .aboutHeader img {
   width: 80%;
 }
 .aboutText h2 {
-  position: absolute;
-  top: 20%;
-  left: 43%;
+  padding-top: 20px;
   font-size: 48px;
   font-weight: 500;
 }
@@ -327,10 +332,6 @@ body {
 
 .storyInner {
   padding: 60px 20px;
-}
-
-.storyText h2 {
-  left: 40%;
 }
 
 .storyPicture {
@@ -607,9 +608,9 @@ body {
 }
 
 /* Registry section styling */
-/* .registryContainer {
-  padding-top: 1000px;
-} */
+.registryInner {
+  padding-top: 60px;
+}
 .registryCarousel {
   display: flex !important;
   justify-content: center;
@@ -771,14 +772,12 @@ textarea {
     display: block;
     padding: 40px 0;
   }
-  .aboutText h2 {
-    top: 0;
-    left: 40%;
-    font-size: 45px;
-  }
 
-  .storyText h2 {
-    left: 30%;
+  .couplesInner {
+    padding: 30px 10px;
+  }
+  .aboutText h2 {
+    font-size: 40px;
   }
 
   .couples p {
@@ -799,6 +798,11 @@ textarea {
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding: 40px 0;
+  }
+
+  .storyPictureInner {
+    width: 100%;
   }
 
   .secondDateContainer {
@@ -808,6 +812,7 @@ textarea {
   .firstDateContainer {
     text-align: left;
   }
+
   .cardContainer {
     flex-direction: column;
     justify-content: center;
@@ -900,25 +905,33 @@ textarea {
   .secondGuestContent {
     padding: 30px;
   }
+
+  .aboutInner,
+  .storyInner,
+  .importantInner,
+  .portfolioInner,
+  .guestInner,
+  .registryInner {
+    padding: 60px 20px;
+  }
+
+  .portfolioPictures img {
+    width: 70%;
+  }
+
+  .firstDateContainer,
+  .secondDateContainer {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 689px) {
   .aboutText h2 {
-    left: 30%;
-    font-size: 35px;
-  }
-
-  .storyText h2 {
-    left: 20%;
     font-size: 30px;
   }
 
   .couples img {
     width: 70%;
-  }
-
-  .rsvpText h2 {
-    left: 40%;
   }
 
   .portfolioPictures {
@@ -932,12 +945,16 @@ textarea {
     flex-direction: column;
   }
 
-  /* .registryCarousel {
-    display: flex !important;
-    flex-direction: column;
+  .card {
+    width: 100%;
   }
 
-  .registryCarouselInner {
-    width: auto;
-  } */
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p,
+  .card a {
+    font-size: 14px;
+  }
 }
