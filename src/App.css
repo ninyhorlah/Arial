@@ -9,6 +9,7 @@
 html {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -80,13 +81,9 @@ body {
   z-index: 1;
   width: 70%;
   align-items: center;
-  margin: 15% auto auto 15%;
+  margin: 50% auto auto 15%;
   text-align: center;
   color: #f9f9fb;
-}
-
-.homeInnerText {
-  padding-top: 60px;
 }
 
 .wedding h2 {
@@ -408,6 +405,9 @@ body {
 .cardContainer {
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   padding: 40px;
 }
 
@@ -536,7 +536,7 @@ body {
 
 /* Guest Section Styling */
 #event {
-  padding-bottom: 620px;
+  padding-bottom: 690px;
 }
 .guestContainer {
   width: 100%;
@@ -609,7 +609,7 @@ body {
 
 /* Registry section styling */
 .registryInner {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 .registryCarousel {
   display: flex !important;
@@ -645,6 +645,10 @@ body {
 
 .registryCarouselContainer {
   padding: 50px 10px;
+}
+
+.sliderMobile {
+  display: none;
 }
 
 /* RSVP section styling */
@@ -923,6 +927,10 @@ textarea {
   .secondDateContainer {
     padding-bottom: 20px;
   }
+
+  #event {
+    padding-bottom: 490px;
+  }
 }
 
 @media screen and (max-width: 689px) {
@@ -956,5 +964,61 @@ textarea {
   .card p,
   .card a {
     font-size: 14px;
+  }
+
+  .sliderWeb {
+    display: none;
+  }
+
+  .sliderMobile {
+    display: block;
+  }
+  .registryCarouselInner {
+    align-items: center;
+    margin: auto;
+  }
+
+  #event {
+    padding-bottom: 300px;
+  }
+
+  .registryInner {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wedding h2 {
+    font-size: 20px;
+  }
+
+  .weddingName h2 {
+    font-size: 20px;
+  }
+
+  .weddingDate p {
+    font-size: 13px;
+    padding-top: 10px;
+  }
+
+  .expired p {
+    padding-top: 20px;
+    font-size: 10px;
+  }
+
+  .homeInnerText {
+    padding-top: 30px;
+  }
+
+  #event {
+    padding-bottom: 290px;
+  }
+
+  .registryCarouselInner {
+    width: fit-content;
+  }
+
+  .registryInner {
+    padding-top: 120px;
   }
 }

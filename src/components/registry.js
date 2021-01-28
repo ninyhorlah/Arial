@@ -9,6 +9,7 @@ const Registry = () => {
         dots: true,
         infinite: true,
         draggable: true,
+        autoplay: true,
         autoplaySpeed: 2000,
     }
     return (
@@ -25,7 +26,7 @@ const Registry = () => {
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis massa, scelerisque vel diam non.</p>
 
-                    <div className="registryCarouselContainer">
+                    <div className="registryCarouselContainer sliderWeb">
                         <Slider {...settings}>
                             <div className="registryCarousel">
                                 <div 
@@ -130,6 +131,124 @@ const Registry = () => {
                             </div>
                         </Slider>
                     </div>
+                    <div className="registryCarouselContainer sliderMobile">
+                        <Slider>
+                            <div>
+                                 <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faHome}/>
+                                    </div>
+
+                                    <h2>House</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div 
+                                data-aos="fade-down"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faFilm}/>
+                                    </div>
+
+                                    <h2>Film</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faMoneyBill}/>
+                                    </div>
+
+                                    <h2>Money</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div 
+                                data-aos="fade-down"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faBed}/>
+                                    </div>
+
+                                    <h2>Bed</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faGem}/>
+                                    </div>
+
+                                    <h2>Diamond</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                data-aos="fade-down"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faMotorcycle}/>
+                                    </div>
+
+                                    <h2>Motorcycle</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                 <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faBriefcase}/>
+                                    </div>
+
+                                    <h2>Briefcase</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                            <div>
+                                 <div 
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                className="registryCarouselInner">
+                                    <div className="registryIcon">
+                                        <FontAwesomeIcon icon={faMusic}/>
+                                    </div>
+
+                                    <h2>Music</h2>
+
+                                    <p>Aenean et trupis efficitur, pretium lorem vitae, feugiat mi.</p>
+                                </div>
+                            </div>
+                        </Slider>
+                    </div>
+                
+               
                 </div>
                 <RSVP/>
             </div>

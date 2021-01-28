@@ -3,8 +3,7 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 const mapStyles = {
   maxWidth: '1200px',
-  height: '100%',
-  position: 'relative'
+  height: '50%'
 };
 
 export const MapContainer = (props) => {
@@ -26,3 +25,5 @@ export const MapContainer = (props) => {
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyD1LbQZ5KCA4pSgBgz-SEak8RxUz_AM8XU'
 })(MapContainer);
+
+
