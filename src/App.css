@@ -81,7 +81,7 @@ body {
   z-index: 1;
   width: 70%;
   align-items: center;
-  margin: 50% auto auto 15%;
+  margin: 15% auto auto 15%;
   text-align: center;
   color: #f9f9fb;
 }
@@ -931,6 +931,10 @@ textarea {
   #event {
     padding-bottom: 490px;
   }
+
+  .homeText {
+    margin: 25% auto auto 15%;
+  }
 }
 
 @media screen and (max-width: 689px) {
@@ -985,6 +989,10 @@ textarea {
   .registryInner {
     padding-top: 120px;
   }
+
+  .homeText {
+    margin: 35% auto auto 15%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1008,6 +1016,10 @@ textarea {
 
   .homeInnerText {
     padding-top: 30px;
+  }
+
+  .homeText {
+    margin: 50% auto auto 15%;
   }
 
   #event {
