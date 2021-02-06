@@ -12,11 +12,22 @@ import Portfolio from './components/portfolio';
 import Guest from './components/guest' ;
 import Registry from './components/registry'
 import Footer from './components/footer';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const[loader, setLoader] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 1000);
+  }, [])
+  
   AOS.init();
   return (
-    <div className="App">
+    <div>
+      {loader === false ? (
+      <div className="App">
       <Home/>
       
       <Nav/>
@@ -28,6 +39,9 @@ function App() {
       <Guest/>
       <Registry/>
       <Footer/>
+    </div>
+    ) : (<div className="loader"><img src="/assets/img/loader.svg" alt=""/></div>)
+    }
     </div>
   );
 }
