@@ -40,7 +40,7 @@ function App() {
       <Registry/>
       <Footer/>
     </div>
-    ) : (<div className="loader"><img src="/assets/img/loader.svg" alt=""/></div>)
+    ) : (<div className="loader"><div><img src="/assets/img/loader.svg" alt=""/></div></div>)
     }
     </div>
   );

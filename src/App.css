@@ -29,6 +29,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 /* General Styling */
@@ -1006,6 +1007,10 @@ textarea {
 
   .homeText {
     margin: 35% auto auto 15%;
+  }
+
+  .loader {
+    padding-top: 120px;
   }
 }
 
